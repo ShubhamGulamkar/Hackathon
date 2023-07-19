@@ -1,10 +1,7 @@
-// import "./App.css";
-// import { Dashboard } from "./components/Dashboard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import { Profile } from "./components/Profile";
-// import { CheckProfile } from "./components/CheckProfile";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Form from "./components/Form";
 
 function App() {
   // const [isAdmin, setIsAdmin] = useState(false);
@@ -17,8 +14,8 @@ function App() {
         <Routes>
           <Route path="/" Component={Login} />
           <Route path="/signup" Component={Register} />
-          {/* <Route path="/dashboard" Component={Dashboard} />
-          <Route path="/profile" Component={Profile} />
+          <Route path="/form" Component={Form} />
+          {/*<Route path="/profile" Component={Profile} />
           <Route path="/data" Component={CheckProfile} /> */}
         </Routes>
       </BrowserRouter>
